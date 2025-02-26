@@ -16,16 +16,16 @@ export const navItems = [
 export const IntroProfessionalDetails = [
   {
     text: "Linked-In",
-    href: "https://www.linkedin.com/in/sujith-medisetty-40965a1b4/",
+    href: "https://www.linkedin.com/in/sujith-m-40965a1b4/",
   },
   {
     text: "Download CV",
-    href: "Resume.pdf",
+    href: "/Resume.pdf",
   },
 ];
 
 export const IntroDesc =
-  "I am a full-stack developer with 1+ years of experience in building and delivering web applications at Amadeus Software Labs. I am proficient in Java, Python and have hands-on experience with frameworks such as Spring Boot, React, and Angular. I have a strong understanding of both the frontend and backend technologies. I am a highly motivated and self-directed individual. I am also a team player and I am able to work effectively with others to achieve common goals.";
+  "I am a self-starter with strong interpersonal skills, seeking a position in a software company. With over 4 years of experience, I work efficiently both as an individual contributor and as part of a team. I embrace new challenges and think creatively to find out-of-the-box solutions to problems. My experience spans various technologies, including HTML, CSS, React.js, Spring Framework, JavaScript, MongoDB, MySQL, Ruby on Rails, Mockito, Flask, AWS, Docker, and Jenkins. I am proficient in coding with Java, C++, and Python. I believe in character, values, vision, and action. As a quick learner, I am committed to learning from my mistakes, a virtue that I believe will propel me forward in my life and career.";
 
 // About.jsx
 export const AboutDesc =

@@ -82,11 +82,11 @@ const Introduction = () => {
     <Box padding={isMediumScreen ? "2rem 8% 3rem" : "5rem 8% 3rem"} id="home">
       <Home>
         <HomeContent>
-          <h3>Hello, It's Me</h3>
+          <h3>HELLO I'M,</h3>
           <h1>{MyName}</h1>
-          <h3>
+          {/* <h3>
             And I'm a <span>{MyRole}</span>
-          </h3>
+          </h3> */}
           <p>{IntroDesc}</p>
           <ProfessionalDetails>
             {IntroProfessionalDetails.map((buttonLink, index) => (

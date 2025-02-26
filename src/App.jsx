@@ -17,7 +17,7 @@ const App = () => {
         <CssBaseline />
         <Header />
         <Introduction />
-        <About />
+        {/* <About /> */}
         <Profile />
         <Projects />
         <Contact />
