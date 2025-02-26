@@ -20,7 +20,7 @@ export const IntroProfessionalDetails = [
   },
   {
     text: "Download CV",
-    href: "/Resume.pdf",
+    href: "https://github.com/Sujith-Medisetty/portfolio/blob/master/public/Resume.pdf",
   },
 ];
 

@@ -84,10 +84,10 @@ const Introduction = () => {
         <HomeContent>
           <h3>HELLO I'M,</h3>
           <h1>{MyName}</h1>
-          {/* <h3>
-            And I'm a <span>{MyRole}</span>
-          </h3> */}
-          {/* <p>{IntroDesc}</p> */}
+          <h3>
+            <span>About Me</span>
+          </h3>
+          <p>{IntroDesc}</p>
           <ProfessionalDetails>
             {IntroProfessionalDetails.map((buttonLink, index) => (
               <StyledButton key={index} href={buttonLink.href}>
