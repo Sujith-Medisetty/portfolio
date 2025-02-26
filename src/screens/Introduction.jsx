@@ -59,7 +59,7 @@ const Introduction = () => {
     justifyContent: "left",
     alignItems: "center",
 
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("xs")]: {
       flexDirection: "column",
     },
   }));
