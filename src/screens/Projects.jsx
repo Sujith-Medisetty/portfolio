@@ -85,7 +85,7 @@ const Projects = () => {
   };
 
   return (
-    <Box id="projects" sx={{ background: `${theme.palette.secondary.main}` }}>
+    <Box id="projects">
       <ProjectSection padding="5rem 5% 3rem">
         <Box className="heading">Projects</Box>
         <ProjectBox>

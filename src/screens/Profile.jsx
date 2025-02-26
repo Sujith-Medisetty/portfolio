@@ -30,6 +30,7 @@ const Profile = () => {
     alignItems: "center",
     maxWidth: "70%",
     margin: "1rem auto",
+    scrollMarginTop: "70px",
 
     [theme.breakpoints.down("md")]: {
       maxWidth: "100%",
@@ -120,12 +121,12 @@ const Profile = () => {
   };
 
   return (
-    <Box id="profile">
+    <Box id="profile" sx={{ background: `${theme.palette.secondary.main}` }}>
       <ProfileSection padding="5rem 8% 3rem">
         <Box className="heading">My Profile</Box>
 
         {ProfileDetails.map((section, sectionIndex) => (
-          <ProfileBox key={sectionIndex}>
+          <ProfileBox key={sectionIndex} id={`${section.category}`}>
             <ContentTitle>{section.category}</ContentTitle>
 
             {section.timelines.map((timeline, index) => {
@@ -150,10 +151,10 @@ const Profile = () => {
                           {timeline.startYear && timeline.endYear
                             ? `${timeline.startYear} - ${timeline.endYear}`
                             : timeline.startYear
-                            ? timeline.startYear
-                            : timeline.endYear
-                            ? timeline.endYear
-                            : ""}
+                              ? timeline.startYear
+                              : timeline.endYear
+                                ? timeline.endYear
+                                : ""}
                         </span>
                       </Box>
                     ) : (
@@ -167,6 +168,25 @@ const Profile = () => {
                       ) : (
                         <span>{timeline.title}</span>
                       )}
+
+                      {section.category === "Certifications" && timeline.link && (
+                        <a
+                          href={timeline.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            marginLeft: "10px",
+                            padding: "5px 10px",
+                            backgroundColor: "#007bff",
+                            color: "#fff",
+                            borderRadius: "5px",
+                            textDecoration: "none",
+                            fontSize: "12px",
+                          }}
+                        >
+                          View Certificate
+                        </a>
+                      )}
                     </Box>
                     <Box
                       className="desc"
@@ -175,8 +195,8 @@ const Profile = () => {
                       <span>
                         {words.length > ProfileContentBoxDescSize
                           ? `${words
-                              .slice(0, ProfileContentBoxDescSize)
-                              .join(" ")}`
+                            .slice(0, ProfileContentBoxDescSize)
+                            .join(" ")}`
                           : timeline.desc}
                         {words.length > ProfileContentBoxDescSize ? (
                           <span
@@ -184,11 +204,11 @@ const Profile = () => {
                             onClick={() =>
                               handleShowMore(
                                 section.category +
-                                  " (" +
-                                  timeline.title +
-                                  " - " +
-                                  timeline.org +
-                                  ")",
+                                " (" +
+                                timeline.title +
+                                " - " +
+                                timeline.org +
+                                ")",
                                 timeline.desc
                               )
                             }

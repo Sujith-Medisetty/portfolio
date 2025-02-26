@@ -39,6 +39,12 @@ const Introduction = () => {
       padding: 0,
       color: theme.palette.primary.main,
     },
+    "& h4": {
+      fontSize: "1rem",
+      fontWeight: 400,
+      margin: 0,
+      padding: 0,
+    },
 
     [theme.breakpoints.down("sm")]: {
       "& h3": {
@@ -50,6 +56,12 @@ const Introduction = () => {
         fontWeight: 700,
         lineWeight: 1,
         color: theme.palette.primary.main,
+      },
+      "& h4": {
+        fontSize: ".8rem",
+        fontWeight: 400,
+        margin: 0,
+        padding: 0,
       },
     },
   }));
@@ -84,9 +96,9 @@ const Introduction = () => {
         <HomeContent>
           <h3>HELLO I'M,</h3>
           <h1>{MyName}</h1>
-          <h3>
+          {/* <h4>
             <span>About Me</span>
-          </h3>
+          </h4> */}
           <p>{IntroDesc}</p>
           <ProfessionalDetails>
             {IntroProfessionalDetails.map((buttonLink, index) => (

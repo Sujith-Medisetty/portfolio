@@ -1,10 +1,13 @@
 import { Box, styled } from "@mui/material";
+import { useTheme } from "@emotion/react";
 import StyledButton from "../components/StyledButton";
 import MarkunreadIcon from "@mui/icons-material/Markunread";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { myEmail, phone } from "../MyDetails";
 
 const Contact = () => {
+  const theme = useTheme();
+
   const ContactSection = styled(Box)(({ theme }) => ({
     display: "flex",
     justifyContent: "center",
@@ -25,7 +28,7 @@ const Contact = () => {
   }));
 
   return (
-    <Box id="contact">
+    <Box id="contact" sx={{ background: `${theme.palette.secondary.main}` }}>
       <ContactSection padding="2rem 8% 3rem">
         <StyledButton href="https://www.linkedin.com/in/sujith-medisetty-40965a1b4/">
           {" "}

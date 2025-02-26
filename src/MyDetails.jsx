@@ -6,8 +6,11 @@ export const MyRole = "Full-Stack Developer";
 // Header.jsx
 export const navItems = [
   { label: "Home", path: "#home" },
-  { label: "About", path: "#about" },
-  { label: "Profile", path: "#profile" },
+  { label: "Certifications", path: "#Certifications" },
+  { label: "Education", path: "#Education" },
+  { label: "Experience", path: "#Experience" },
+  { label: "Skills", path: "#Skills" },
+  // { label: "Profile", path: "#profile" },
   { label: "Projects", path: "#projects" },
   { label: "Contact", path: "#contact" },
 ];
@@ -20,7 +23,7 @@ export const IntroProfessionalDetails = [
   },
   {
     text: "Download CV",
-    href: "https://github.com/Sujith-Medisetty/portfolio/blob/master/public/Resume.pdf",
+    href: "/portfolio/Resume.pdf",
   },
 ];
 
@@ -36,36 +39,44 @@ export const ProfileContentBoxDescSize = 50;
 
 export const ProfileDetails = [
   {
+    category: "Certifications",
+    icon: "SchoolIcon",
+    timelines: [
+      {
+        title: "AWS Certified Developer – Associate ",
+        org: "",
+        startYear: "",
+        endYear: "",
+        desc: "",
+        link: "https://www.credly.com/badges/eb0dc14b-1932-4823-98fa-247af41f19fb"
+      },
+      {
+        title: "Database Programming with SQL from Oracle Academy",
+        org: "",
+        startYear: "",
+        endYear: "",
+        desc: "",
+        link: "https://github.com/Sujith-Medisetty/certificates/blob/main/OracleSQL_certificate.pdf"
+      },
+    ],
+  },
+  {
     category: "Education",
     icon: "SchoolIcon",
     timelines: [
       {
         title: "Graduation",
-        org: "University Of Memphis",
-        startYear: "2023",
-        endYear: "Currently pursuing masters",
-        desc: "Currently pursuing my master's at University Of Memephis, Memphis, TN 38152",
+        org: "University Of Memphis, Memphis, TN38152",
+        startYear: "",
+        endYear: "",
+        desc: "Completed my Master's in Computer Science at the University of Memphis with a CGPA of 3.8, gaining expertise in software development and system design",
       },
       {
         title: "UnderGraduation",
-        org: "Anurag Group Of Institutions",
-        startYear: "2017",
-        endYear: "2021",
-        desc: "Graduated with a Bachelor of Technology degree in Information Technology from Anurag Group Of Institutions, Hyderabad, India in 2021 with an aggregate of 9.45",
-      },
-      {
-        title: "Intemediate",
-        org: "Narayana Junior College",
-        startYear: "2015",
-        endYear: "2017",
-        desc: "Completed the Intermediate Examination from Narayana Junior College, Hyderabad, India in 2017.",
-      },
-      {
-        title: "Secondary School",
-        org: "Montessori High School",
+        org: "Anurag Group Of Institutions, Hyderabad, TG, India",
         startYear: "",
-        endYear: "2015",
-        desc: "Completed the Secondary School Examination from Montessori High School, India in 2015.",
+        endYear: "",
+        desc: "Graduated with a Bachelor of Technology degree in Information Technology from Anurag Group Of Institutions, Hyderabad, India in 2021 with an aggregate of 3.7",
       },
     ],
   },
@@ -74,18 +85,18 @@ export const ProfileDetails = [
     icon: "WorkHistoryIcon",
     timelines: [
       {
-        title: "Software Developer",
-        org: "Amadeus Software Labs",
-        startYear: "Nov 2021",
-        endYear: "Dec 2022 (1 yr 2 mos)",
-        desc: "Worked as a full-stack developer in the Airlines Checking In department, specifically in the IATCI (Interline Airline Through Check-in) department. Worked on bug fixes in the code, developed a tool related to airlines feeds, and took care of the entire process from bug fix to delivery to the client. This experience gave me valuable exposure to real-world applications.",
+        title: "Software Development Engineer",
+        org: "Sabre Corporation",
+        startYear: "Dec 2024",
+        endYear: "Present",
+        desc: "Contributing to the development of internal tools and services, including an EDIFACT parser for troubleshooting customer issues. Responsible for designing Spring Boot services, automating data processing, and optimizing React-based dashboards to enhance real-time data visualization and debugging efficiency.",
       },
       {
-        title: "Application Developer Intern",
-        org: "Revature",
-        startYear: "Jul 2021",
-        endYear: "Oct 2021 (4 mos)",
-        desc: "As an Application Developer Intern at Revature, I developed a robust management system using Spring Boot and React. My role involved backend API development, creating a user-friendly interface, and implementing security measures, all aimed at enhancing operational efficiency",
+        title: "Software Development Engineer",
+        org: "Amadeus Software Labs",
+        startYear: "Feb 2019",
+        endYear: "Dec 2022",
+        desc: "Developed Java Spring Boot APIs integrated with AWS RDS, contributing to real-time data delivery. Worked on survey and feedback platforms, real-time feed visualization tools, and refactored monolithic applications into microservices to improve maintainability. Built reusable UI components in React, optimizing performance and state management.",
       },
     ],
   },
@@ -99,11 +110,11 @@ export const ProfileDetails = [
       },
       {
         title: "Frameworks & Libraries",
-        desc: "Spring Boot, Spring Security, Spring JPA, Hibernate, React JS, Angular JS, Flutter (Mobile App Development)",
+        desc: "React JS, Spring Boot, Spring Security, Spring JPA, Hibernate",
       },
       {
         title: "Cloud, DevOps, Build & config tools..etc",
-        desc: "AWS, Docker, Jenkins",
+        desc: "AWS (SQS, SNS, S3, EC2, Lambda, CloudFormation, ECS, RDS, Code Pipeline, Code Deploy, Code Build, Kinesis Data streams), Docker, Jenkins",
       },
     ],
   },
