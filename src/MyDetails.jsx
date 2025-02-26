@@ -29,7 +29,7 @@ export const IntroDesc =
 
 // About.jsx
 export const AboutDesc =
-  "I worked as a Software Development Engineer (SDE) at Amadeus Software Labs in the Airlines Check-In department. My responsibilities included fixing bugs in the code, developing a tool related to airline feeds, and managing the entire process from bug fixes to delivery to the client. I utilized frameworks such as Angular, React, and Spring Boot, and I have a strong understanding of both frontend and backend technologies. This experience provided me with valuable exposure to real-world applications.";
+  "I am a self-starter with strong interpersonal skills, seeking a position in a software company. With over 4 years of experience, I work efficiently both as an individual contributor and as part of a team. I embrace new challenges and think creatively to find out-of-the-box solutions to problems. My experience spans various technologies, including HTML, CSS, React.js, Spring Framework, JavaScript, MongoDB, MySQL, Ruby on Rails, Mockito, Flask, AWS, Docker, and Jenkins. I am proficient in coding with Java, C++, and Python. I believe in character, values, vision, and action. As a quick learner, I am committed to learning from my mistakes, a virtue that I believe will propel me forward in my life and career.";
 
 //Profile.jsx
 export const ProfileContentBoxDescSize = 50;

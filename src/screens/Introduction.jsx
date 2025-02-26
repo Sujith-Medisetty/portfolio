@@ -87,7 +87,7 @@ const Introduction = () => {
           {/* <h3>
             And I'm a <span>{MyRole}</span>
           </h3> */}
-          <p>{IntroDesc}</p>
+          {/* <p>{IntroDesc}</p> */}
           <ProfessionalDetails>
             {IntroProfessionalDetails.map((buttonLink, index) => (
               <StyledButton key={index} href={buttonLink.href}>
