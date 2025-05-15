@@ -8,7 +8,7 @@ import { myEmail, phone } from "../MyDetails";
 const Contact = () => {
   const theme = useTheme();
 
-  const ContactSection = styled(Box)(() => ({
+  const ContactSection = styled(Box)(() => ({ 
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
