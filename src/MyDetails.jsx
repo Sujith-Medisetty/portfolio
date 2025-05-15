@@ -19,7 +19,7 @@ export const navItems = [
 export const IntroProfessionalDetails = [
   {
     text: "Linked-In",
-    href: "www.linkedin.com/in/sujith-m-185b01237/",
+    href: "https://www.linkedin.com/in/sujith-m-185b01237/",
   },
   {
     text: "Download CV",
