@@ -30,7 +30,7 @@ const Contact = () => {
   return (
     <Box id="contact" sx={{ background: `${theme.palette.secondary.main}` }}>
       <ContactSection padding="2rem 8% 3rem">
-        <StyledButton href="https://www.linkedin.com/in/sujithmedi-68090b354/">
+        <StyledButton href="https://www.linkedin.com/in/sujithm-68090b354">
           {" "}
           Linked In
         </StyledButton>
