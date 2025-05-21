@@ -76,7 +76,7 @@ export const ProfileDetails = [
         org: "Anurag Group Of Institutions, Hyderabad, TG, India",
         startYear: "",
         endYear: "",
-        desc: "Graduated with a Bachelor of Technology degree in Information Technology from Anurag Group Of Institutions, Hyderabad, India in 2021 with an aggregate of 3.7",
+        desc: "Graduated with a Bachelor of Technology degree in Information Technology from Anurag Group Of Institutions, Hyderabad, India with an aggregate of 3.7",
       },
     ],
   },
